@@ -1,0 +1,77 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+	min-height: 100vh;
+}
+
+
+@media (min-width: 768px) {
+  .page-container {
+    display: grid;
+    grid-template-columns: 300px 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
+header {
+  grid-column: span 3;
+  padding: 10px;
+	text-align: center;
+  font-size: 3em;
+	background: url(images/backgrounds-blank-blue-953214.jpg);
+  color: #eafff0;
+}
+
+main {
+	font-size: 1.2em;
+	max-width: 700px;
+	flex: 1;
+	padding: 20px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+nav {
+  background-color: rgb(143, 162, 214);
+  padding: 10px;
+  line-height: 2;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+nav ul {
+  list-style-type: none;
+}
+ 
+aside {
+  padding: 20px;
+  background-color: rgb(143, 162, 214);
+  font-size: 24px;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #690;
+  color: white;
+  background: url(images/backgrounds-blank-blue-953214.jpg);
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+#xkcd {
+  margin: 10px 50px;
+}
